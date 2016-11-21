@@ -1,0 +1,36 @@
+apply plugin: 'java'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
+    }
+}
+apply plugin: 'com.jfrog.bintray'
+
+bintray {
+    user = System.getenv('BINTRAY_DEBUGDUCK_USER')
+    key = System.getenv('BINTRAY_DEBUGDUCK_KEY')
+    pkg {
+        repo = 'maven-java'
+        name = 'singletonresetter'
+        userOrg = 'debugduckdesign'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/rwoloszyn/SingletonReseter.git'
+        websiteUrl = 'https://github.com/rwoloszyn/SingletonReseter'
+        issueTrackerUrl = 'https://github.com/rwoloszyn/SingletonReseter/issues'
+        version {
+            name = '1.0'
+            vcsTag = '1.0'
+            desc = 'Singleton object reset library'
+            released  = new Date()
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'junit:junit:4.12'
+}
