@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/rwoloszyn/SingletonReseter.svg?branch=master)](https://travis-ci.org/rwoloszyn/SingletonReseter)
+[![Documentation Status](https://readthedocs.org/projects/singletonreseter/badge/?version=latest)](http://singletonreseter.readthedocs.io/en/latest/?badge=latest)
+
 ==========================================================================
 
 # SingletonReseter
