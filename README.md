@@ -3,7 +3,7 @@
 
 # SingletonReseter
 Simple Java library to reset instances of singletons classes.
-Library it't mostly used for reset instances of singletons during unit tests.
+Library it's mostly used for reset instances of singletons during unit tests.
 
 
 # Usage
